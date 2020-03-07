@@ -9,7 +9,9 @@ from setuptools import find_packages, setup
 
 
 INSTALL_REQUIREMENTS = []
-SCRIPT_NAMES = []
+SCRIPT_NAMES = [
+    "wb_calculate_score",
+]
 
 
 def get_version():
