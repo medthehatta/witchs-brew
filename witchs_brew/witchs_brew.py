@@ -58,14 +58,14 @@ class Card(object):
     def __repr__(self):
         if self.kind == INGREDIENT:
             if self.boiled:
-                return f"<{self.type[:3].title()} (B): {self.value}>"
+                return f"<{self.type[:3].title()} (B):{self.value}>"
             else:
-                return f"<{self.type[:3].title()}: {self.value}>"
+                return f"<{self.type[:3].title()}:{self.value}>"
         elif self.kind == MAGIC:
-            return f"<Magic: {self.value}>"
+            return f"<Magic:{self.value}>"
         else:
             if self.value is not None:
-                return f"<{self.kind.title()}: {self.value}>"
+                return f"<{self.kind.title()}:{self.value}>"
             else:
                 return f"<{self.kind.title()}>"
 
