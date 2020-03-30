@@ -321,8 +321,8 @@ def rule13(spell, score):
 
 def apply_rules(spells):
     local_rules = [
-        # rule 2 precedes rule 1 because rule 2 removes volatiles before
-        # scoring
+        # rule 2 precedes rule 1 because rule 2 removes cards from
+        # consideration before scoring
         rule2,
         rule1,
         rule3,
